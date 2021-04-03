@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/cabecalho.css" />
+    <link rel="stylesheet" href="./assets/css/produto.css" />
+    <link rel="stylesheet" href="./assets/css/outros-produtos.css" />
+    <link rel="stylesheet" href="./assets/css/carousel.css"/>
+    <title>Produto Gatito</title>
+</head>
+
+<body>
+    <header class="cabecalho container">
+        <div class="cabacalho__divisao">
+            <img src="./assets/img/logo.svg" alt="Logo d" class="cabecalho__logo">
+            <h1 class="cabecalho__titulo">gatito</h1>
+        </div>
+        <nav>
+            <ul class="cabecalho__navegacao">
+                <li class="cabecalho__item cabacalho__item--ativo"><a href="#">Home</a></li>
+                <li class="cabecalho__item"><a href="#">Sobre</a></li>
+                <li class="cabecalho__item"><a href="#">Contato</a></li>
+                <li class="cabecalho__item"><a href="#" aria-label="busca"><img src="./assets/img/lupa.svg"
+                            alt="icone de busca"></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="produto">
+            <div class="produto__foto"></div>
+            <article class="produto__descricao container">
+                <h2 class="produto__marca">
+                    GATITO
+
+                </h2>
+                <div class="produto__divisao">
+                    <p class="produto__preco">
+                        R$ 128,90
+                    </p>
+                    <h3 class="produto__nome">
+                        GATITO PRO PLAN SENSITIVE SKIN & STOMACH
+                        CAT FOOD
+                    </h3>
+                    <p class="produto__texto">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae tempore impedit voluptatum
+                        optio nulla molestiae culpa suscipit possimus necessitatibus aliquid unde in ipsum perferendis
+                        dolorum harum itaque animi, consectetur quas?
+                    </p>
+                    <p class="produto__texto">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa dolor voluptatum fuga facilis
+                        veniam, praesentium repellat voluptatibus suscipit maiores excepturi. Nihil, atque. Cum minus
+                        aliquam ut placeat ipsam non nostrum!
+                    </p>
+                    <p class="produto__texto">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis repudiandae enim dicta, at
+                    </p>
+                    <button class="produto__comprar">
+                        COMPRAR
+                    </button>
+                </div>
+            </article>
+        </section>
+        <section class="outros-produtos">
+            <h2 class="outros-produtos__titulo">Nossos outros produtos</h2>
+            <article class="carousel">
+                <button class="carousel__botao carousel__botao--anterior" data-anterior aria-label="Botão de 
+                voltar"></button>
+                <button class="carousel__botao carousel__botao--proximo" data-proximo aria-label="Botão de 
+                avançar"></button>
+                <ul class="carousel__lista-produtos" data-lista-produtos>
+                    <a href="#" class="carousel__produto">
+                        <li class="carousel__imagem-container">
+                            <img src="assets/img/produto1.png" alt="" class="carousel__imagem">
+                        </li>
+                    </a><a href="#" class="carousel__produto">
+                        <li class="carousel__imagem-container">
+                            <img src="assets/img/produto2.png" alt="" class="carousel__imagem">
+                        </li>
+                    </a><a href="#" class="carousel__produto">
+                        <li class="carousel__imagem-container">
+                            <img src="assets/img/produto3.png" alt="" class="carousel__imagem">
+                        </li>
+                    </a><a href="#" class="carousel__produto">
+                        <li class="carousel__imagem-container">
+                            <img src="assets/img/produto4.png" alt="" class="carousel__imagem">
+                        </li>
+                    </a><a href="#" class="carousel__produto">
+                        <li class="carousel__imagem-container">
+                            <img src="assets/img/produto5.png" alt="" class="carousel__imagem">
+                        </li>
+                    </a>
+                </ul>
+                <div class="carousel__indicadores" data-navegacao>
+                    <button class="carousel__indicador carousel__indicador--ativo" aria-label="Slide 1"></button>
+                    <button class="carousel__indicador" aria-label="Slide 2"></button>
+                    <button class="carousel__indicador" aria-label="Slide 3"></button>
+                    <button class="carousel__indicador" aria-label="Slide 4"></button>
+                    <button class="carousel__indicador" aria-label="Slide 5"></button>
+                </div> 
+            </article>
+        </section>
+    </main>
+    <script src="assets/js/index.js" type="module"></script>
+</body>
+
+</html>
